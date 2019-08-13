@@ -23,7 +23,6 @@ class MusicBox extends Component {
   render(){
     return(
       <div className="music-box">
-        <h2>I'm a Music Box</h2>
         <ChartList chart={this.state.ukChart} />
       </div>
     )

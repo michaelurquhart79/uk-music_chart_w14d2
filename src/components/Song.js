@@ -1,10 +1,15 @@
 import React from 'react';
+import './Song.css';
 
 const Song = (props) => {
   return(
     <div>
 
-      <li>{props.position}. {props.song.title.label}</li>
+      <li>
+        <p>{props.position}. {props.song.title.label}</p>
+        <img className="image" src={props.song["im:image"][1].label}
+        alt={props.song.title.label + " thumbnail"}/>
+      </li>
     </div>
   );
 }
